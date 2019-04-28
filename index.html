@@ -23,8 +23,7 @@ permalink: /
 <section id="intro">
   <div class="container">
     <div class="row">
-	{% if site.data.indexmain.size > 0 %}
-      <div class="col-md-7 col-sm-12">
+	 <div class="col-md-7 col-sm-12">
 	    
         <div class="block">
           <div class="section-title">
@@ -40,20 +39,20 @@ permalink: /
         </div>
       </div><!-- .col-md-5 close -->	  
     </div>
-	{% endif %}
+	
 </section>
 
 <section id="feature">
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-6">
-	{% if site.data.indexmain.size > 1 %}
+	
       <h2>{{site.data.indexmain[1].name}}</h2>
       <p>{{site.data.indexmain[1].title}}</p>
 	  </br>
 	    <p>{{site.data.indexmain[1].content}}</p>
 	  
-	  {% endif %}
+	
     </div>
   </div>
 </div>
