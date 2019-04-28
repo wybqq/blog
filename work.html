@@ -39,8 +39,7 @@ permalink: /work/
 				    {% for tm in site.data.lifeimonials %}
 					   {% if tm.type == 'lvyou' %}
 						<li class="mix lvyou">
-						  <a href="#">
-							<img src="{{ tm.image }}" alt="">
+						 <img src="{{ tm.image }}" alt="">
 							<div class="overly">
 							  <div class="position-center">
 								<h2>{{ tm.name }}</h2>
@@ -48,7 +47,7 @@ permalink: /work/
 
 							  </div>
 							</div>
-						  </a>
+						 
 					  </li>
 				     {% endif %}
 					  {% if tm.type == 'laodong' %}
