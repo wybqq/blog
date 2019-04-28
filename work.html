@@ -36,6 +36,17 @@ permalink: /work/
 			  
                 <ul id="portfolio-contant-active">
 				 {% if site.data.lifeimonials.size > 0 %}
+				 <li class="mix lvyou">
+						 <img src="{{ tm.image }}" alt="">
+							<div class="overly">
+							  <div class="position-center">
+								<h2>{{ tm.name }}</h2>
+								<p>{{ tm.title }} </p>
+
+							  </div>
+							</div>
+						 
+					  </li>
 				    {% for tm in site.data.lifeimonials %}
 					     {% if tm.type == 'lvyou' %}
 						<li class="mix lvyou">
