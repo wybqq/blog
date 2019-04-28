@@ -17,7 +17,7 @@ permalink: /think/
   </div>
 </section>
 {% for post in site.posts %}
- {% if post.type='think' %}
+ {% if post.type=='think' %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
   <p class="post-date">{{ post.date | date_to_long_string }}</p>
