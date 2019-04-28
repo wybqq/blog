@@ -9,14 +9,14 @@ permalink: /think/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>读书</h1>
+          <h1>读书{{site.minds.size}}</h1>
           <p></p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+{% for mind in site.minds %}
 <div class="post-area">
   <a href="{{ mind.url | prepend: site.baseurl }}" class="bold">{{ mind.title }}</a>
   <p class="post-date">{{ mind.date | date_to_long_string }}</p>
@@ -24,4 +24,4 @@ permalink: /think/
     {{ mind.subtitle | truncatewords: 50 }}
   </p>
 </div>
-
+{% endfor %}
