@@ -1,11 +1,11 @@
 - name: Rose Ray
   title: CEO-Themefisher
   lifeimonial: ""
- image: img/item-img1.jpg
+  image: img/item-img1.jpg
   type:lvyou
 - name: Rose Ray sr.
   title: CEO-Themefisher
- lifeimonial: ""
+  lifeimonial: ""
   image: img/item-img1.jpg
   type:laodong
 - name: Rose Ray jr.
