@@ -37,7 +37,7 @@ permalink: /work/
                 <ul id="portfolio-contant-active">
 				 {% if site.data.lifeimonials.size > 0 %}
 				    {% for tm in site.data.lifeimonials %}
-					   {% if site.data.lifeimonials.type == 'lvyou' %}
+					   {% if tm.type == 'lvyou' %}
 						<li class="mix lvyou">
 						  <a href="#">
 							<img src="{{ tm.image }}" alt="">
@@ -51,7 +51,7 @@ permalink: /work/
 						  </a>
 					  </li>
 				     {% endif %}
-					  {% if site.data.lifeimonials.type == 'laodong' %}
+					  {% if tm.type == 'laodong' %}
 						<li class="mix laodong">
 						  <a href="#">
 							<img src="{{ tm.image }}" alt="">
@@ -66,7 +66,7 @@ permalink: /work/
 					  </li>
 				     {% endif %}
 					 
-					  {% if site.data.lifeimonials.type == 'canguan' %}
+					  {% if tm.type == 'canguan' %}
 						<li class="mix canguan">
 						  <a href="#">
 							<img src="{{ tm.image }}" alt="">
@@ -81,7 +81,7 @@ permalink: /work/
 					  </li>
 				     {% endif %}
 					 
-					  {% if site.data.lifeimonials.type == 'qita' %}
+					  {% if tm.type == 'qita' %}
 						<li class="mix qita">
 						  <a href="#">
 							<img src="{{ tm.image }}" alt="">
