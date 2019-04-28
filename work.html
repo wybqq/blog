@@ -1,0 +1,121 @@
+---
+layout: page
+title: 一叶竹-生活动态
+permalink: /work/
+---
+
+    <!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>生活动态</h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Portfolio Start -->
+<section id="portfolio-work">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <div class="portfolio-menu">
+                <ul>
+                    <li class="filter" data-filter="all">所有图片</li>
+                    <li class="filter" data-filter=".lvyou">旅游</li>
+                    <li class="filter" data-filter=".laodong">劳动</li>
+                    <li class="filter" data-filter=".canguan">参观</li>
+                    <li class="filter" data-filter=".qita">其他</li>
+                </ul>
+              </div>
+              <div class="portfolio-contant">
+			  
+                <ul id="portfolio-contant-active">
+				 <li class="mix lvyou">
+						 <img src="" alt="">
+							<div class="overly">
+							  <div class="position-center">
+								<h2>31231</h2>
+								<p>31213 </p>
+
+							  </div>
+							</div>
+						 
+					  </li>
+				 {% if site.data.lifeimonials.size > 0 %}
+				 
+				    {% for tm in site.data.lifeimonials %}
+					     {% if tm.type == 'lvyou' %}
+						<li class="mix lvyou">
+						 <img src="{{ tm.image }}" alt="">
+							<div class="overly">
+							  <div class="position-center">
+								<h2>{{ tm.name }}</h2>
+								<p>{{ tm.title }} </p>
+
+							  </div>
+							</div>
+						 
+					  </li>
+				     {% endif %}
+					  {% if tm.type == 'laodong' %}
+						<li class="mix laodong">
+						  <a href="#">
+							<img src="{{ tm.image }}" alt="">
+							<div class="overly">
+							  <div class="position-center">
+								<h2>{{ tm.name }}</h2>
+								<p>{{ tm.title }} </p>
+
+							  </div>
+							</div>
+						  </a>
+					  </li>
+				     {% endif %}
+					 
+					  {% if tm.type == 'canguan' %}
+						<li class="mix canguan">
+						  <a href="#">
+							<img src="{{ tm.image }}" alt="">
+							<div class="overly">
+							  <div class="position-center">
+								<h2>{{ tm.name }}</h2>
+								<p>{{ tm.title }} </p>
+
+							  </div>
+							</div>
+						  </a>
+					  </li>
+				     {% endif %}
+					 
+					  {% if tm.type == 'qita' %}
+						<li class="mix qita">
+						  <a href="#">
+							<img src="{{ tm.image }}" alt="">
+							<div class="overly">
+							  <div class="position-center">
+								<h2>{{ tm.name }}</h2>
+								<p>{{ tm.title }} </p>
+
+							  </div>
+							</div>
+						  </a>
+					  </li>
+				     {% endif %}
+							
+					 {% endfor %}
+					 
+				 {% endif %}
+				
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
