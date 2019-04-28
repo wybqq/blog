@@ -16,7 +16,7 @@ permalink: /think/
     </div>
   </div>
 </section>
-{% for mind in site.minds %}
+
 <div class="post-area">
   <a href="{{ mind.url | prepend: site.baseurl }}" class="bold">{{ mind.title }}</a>
   <p class="post-date">{{ mind.date | date_to_long_string }}</p>
@@ -24,4 +24,4 @@ permalink: /think/
     {{ mind.subtitle | truncatewords: 50 }}
   </p>
 </div>
-{% endfor %}
+
