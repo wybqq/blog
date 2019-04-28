@@ -9,19 +9,21 @@ permalink: /think/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>读书{{site.minds.size}}</h1>
+          <h1>读书</h1>
           <p></p>
         </div>
       </div>
     </div>
   </div>
 </section>
-{% for mind in site.minds %}
+{% for post in site.posts %}
+ {% if post.type='think' %}
 <div class="post-area">
-  <a href="{{ mind.url | prepend: site.baseurl }}" class="bold">{{ mind.title }}</a>
-  <p class="post-date">{{ mind.date | date_to_long_string }}</p>
+  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+  <p class="post-date">{{ post.date | date_to_long_string }}</p>
   <p>
-    {{ mind.subtitle | truncatewords: 50 }}
+    {{ post.subtitle | truncatewords: 50 }}
   </p>
 </div>
+{% endif %}
 {% endfor %}
