@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 博客
+title: 一叶竹-我的博客
 permalink: /blog/
 ---
 <!-- Slider Start -->
@@ -9,7 +9,8 @@ permalink: /blog/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-         
+          <h1>我的博客</h1>
+          <p></p>
         </div>
       </div>
     </div>
@@ -20,7 +21,7 @@ permalink: /blog/
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
   <p class="post-date">{{ post.date | date_to_long_string }}</p>
   <p>
-    {{ post.subtitle}}
+    {{ post.subtitle | truncatewords: 50 }}
   </p>
 </div>
 {% endfor %}
