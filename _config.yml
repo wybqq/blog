@@ -2,14 +2,14 @@
 name: 个人博客
 email: 467598480@qq.com
 author: 一叶竹
-url: http://www.wybqq.com/blog
+url: http://www.wybqq.com
 resume_site: http://www.hifreud.com/Resume.io/
 github: https://github.com/wybqq/
 baseurl: "/blog"
 description: 学而不思则罔;思而不学则殆;生命不止;折腾不休
-meta_description: 一叶竹;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: It's our wits that make us men.
-banner: 学而不思则罔，思而不学则殆。
+meta_description: 一叶竹;个人博客;学而不思则罔;思而不学则殆
+motto:学而不思则罔，思而不学则殆
+banner: 生命不止;折腾不休
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
